@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package herencia;
+import java.util.Scanner;
+/**
+ *
+ * @author OHMASTER
+ */
+public class Bear {
+	 String name;
+	 double weight;
+	String colour;
+    void LlenarDatosOso(){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Ingresa el nombre del oso");
+        name=sc.nextLine();
+        System.out.println("Ingresa el color del oso");
+        colour=sc.nextLine();
+        System.out.println("Ingresa el peso del oso");
+        weight=sc.nextDouble();
+    }
+    void VerSalida()
+    {
+        System.out.println("********************************************");
+        System.out.println("******Los datos del oso son: ");
+        System.out.println("**Nombre del oso: " + name);
+        System.out.println("***color del oso: " + colour);
+        System.out.println("****peso: " +weight);
+    }
+}
